@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    include: app-db-core,mybatis-core
+mybatis:
+  mapper-locations: classpath*:/mappers/*Mapper.xml
+mybatis-plus:
+  mapper-locations: classpath*:/mappers/*Mapper.xml
+
+logging:
+  level:
+    org.yuan.boot.db.module: debug

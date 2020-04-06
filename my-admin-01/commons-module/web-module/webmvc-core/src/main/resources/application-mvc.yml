@@ -1,0 +1,12 @@
+server:
+  http2:
+    enabled: true
+  compression:
+    enabled: true
+  port: 8080
+spring:
+  http:
+    encoding:
+      force: true
+    converters:
+      preferred-json-mapper: jackson

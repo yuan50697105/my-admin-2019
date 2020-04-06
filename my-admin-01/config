@@ -1,0 +1,32 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[submodule]
+	active = .
+[remote "origin"]
+	url = git@github.com:/yuan50697105/my-admin-01.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = tecent-shower
+	merge = refs/heads/master
+[branch "dev-new"]
+	remote = tecent-shower
+	merge = refs/heads/dev-new
+[remote "github-shower"]
+	url = git@github.com:yuan50697105/my-admin-shower-maven.git
+	fetch = +refs/heads/*:refs/remotes/github-shower/*
+[remote "gitee-shower"]
+	url = git@gitee.com:yuan50697105/my-admin-shower-maven.git
+	fetch = +refs/heads/*:refs/remotes/gitee-shower/*
+[remote "aliyun-shower"]
+	url = git@code.aliyun.com:710575900/my-admin-shower.git
+	fetch = +refs/heads/*:refs/remotes/aliyun-shower/*
+[branch "dev-shower"]
+	remote = tecent-shower
+	merge = refs/heads/dev-shower
+[remote "tecent-shower"]
+	url = git@e.coding.net:yuan50697105/my-admin-shower.git
+	fetch = +refs/heads/*:refs/remotes/tecent-shower/*

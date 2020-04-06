@@ -1,0 +1,8 @@
+
+group 'org.yuan.boot.commons.db.core'
+
+dependencies {
+    compile project(':commons:commons-db-core')
+
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+}

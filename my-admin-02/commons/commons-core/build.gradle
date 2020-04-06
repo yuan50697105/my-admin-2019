@@ -1,0 +1,4 @@
+group 'org.yuan.boot.commons.core'
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+}

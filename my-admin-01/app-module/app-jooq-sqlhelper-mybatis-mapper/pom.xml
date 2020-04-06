@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>app-module</artifactId>
+        <groupId>org.yuan.boot</groupId>
+        <version>1.0.0-M3</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>app-jooq-sqlhelper-mybatis-mapper</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>app-db-jooq-sqlhelper-mybatis-mapper</module>
+        <module>app-admin-jooq-sqlhelper-mybatis-mapper</module>
+        <module>app-device-jooq-sqlhelper-mybatis-mapper</module>
+        <module>app-wx-jooq-sqlhelper-mybatis-mapper</module>
+        <module>app-all-jooq-sqlhelper-mybatis-mapper</module>
+    </modules>
+</project>

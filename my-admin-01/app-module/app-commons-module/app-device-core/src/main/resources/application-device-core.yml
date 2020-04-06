@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    include: app-db-core,mvc
+logging:
+  level:
+    org.yuan.boot: debug

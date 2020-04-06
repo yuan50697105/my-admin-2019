@@ -1,0 +1,5 @@
+腾讯云		git@e.coding.net:yuan50697105/my-admin-shower.git
+阿里云		git@code.aliyun.com:710575900/my-admin-shower.git
+GitHub		git@github.com:yuan50697105/my-admin-shower-maven.git
+gitee		git@gitee.com:yuan50697105/my-admin-shower-maven.git
+原型		git@github.com:yuan50697105/my-admin-01.git

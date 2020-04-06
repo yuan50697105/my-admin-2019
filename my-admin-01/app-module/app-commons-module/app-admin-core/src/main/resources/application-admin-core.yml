@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    include: app-db-core,mvc,db-config
+logging:
+  level:
+    org.yuan.boot: debug
+api:
+  boot:
+    security:
+      away: jdbc
+      auth-prefix: /api/**
+    oauth:
+      away: jdbc
+      jwt:
+        enable: true

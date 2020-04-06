@@ -1,0 +1,6 @@
+rootProject.name = 'my-admin-02'
+include 'commons:commons-core'
+findProject(':commons:commons-core')?.name = 'commons-core'
+include 'commons:commons-db-core'
+findProject(':commons:commons-db-core')?.name = 'commons-db-core'
+

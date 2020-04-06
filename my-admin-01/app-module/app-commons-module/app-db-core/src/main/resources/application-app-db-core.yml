@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    include: db-core,db-config
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_admin_shower?serverTimezone=GMT%2b8&&characterEncoding=utf-8
+logging:
+  level:
+    org.yuan.boot.db.module: debug

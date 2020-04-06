@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+target
+build
+*.iml
+*.ipr
+*.iws
+/admin-demo-gradle/.gradle/
+node_modules
+.next

@@ -1,0 +1,1 @@
+package org.yuan.boot.commons.base.module.mybaits.jpa.base.dao.pojo;

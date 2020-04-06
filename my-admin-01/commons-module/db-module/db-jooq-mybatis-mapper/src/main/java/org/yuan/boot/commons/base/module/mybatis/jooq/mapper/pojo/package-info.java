@@ -1,0 +1,1 @@
+package org.yuan.boot.commons.base.module.mybatis.jooq.mapper.pojo;

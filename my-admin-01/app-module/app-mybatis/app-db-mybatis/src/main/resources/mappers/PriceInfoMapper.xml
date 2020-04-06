@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.yuan.boot.app.db.module.mybatis.base.module.mapper.PriceInfoMapper">
+  <resultMap id="BaseResultMap" type="org.yuan.boot.app.db.module.mybatis.base.module.pojo.PriceInfo">
+    <!--@mbg.generated-->
+    <!--@Table price_info-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="range_code" jdbcType="VARCHAR" property="rangeCode" />
+    <result column="time_price" jdbcType="DECIMAL" property="timePrice" />
+    <result column="time_interval" jdbcType="DOUBLE" property="timeInterval" />
+    <result column="water_price" jdbcType="DECIMAL" property="waterPrice" />
+    <result column="water_interval" jdbcType="DOUBLE" property="waterInterval" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, create_user, update_user, create_time, update_time, code, `type`, range_code, 
+    time_price, time_interval, water_price, water_interval
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from price_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from price_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="org.yuan.boot.app.db.module.mybatis.base.module.pojo.PriceInfo">
+    <!--@mbg.generated-->
+    insert into price_info (id, create_user, update_user, 
+      create_time, update_time, code, 
+      `type`, range_code, time_price, 
+      time_interval, water_price, water_interval
+      )
+    values (#{id,jdbcType=BIGINT}, #{createUser,jdbcType=VARCHAR}, #{updateUser,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{code,jdbcType=VARCHAR}, 
+      #{type,jdbcType=INTEGER}, #{rangeCode,jdbcType=VARCHAR}, #{timePrice,jdbcType=DECIMAL}, 
+      #{timeInterval,jdbcType=DOUBLE}, #{waterPrice,jdbcType=DECIMAL}, #{waterInterval,jdbcType=DOUBLE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="org.yuan.boot.app.db.module.mybatis.base.module.pojo.PriceInfo">
+    <!--@mbg.generated-->
+    insert into price_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="code != null">
+        code,
+      </if>
+      <if test="type != null">
+        `type`,
+      </if>
+      <if test="rangeCode != null">
+        range_code,
+      </if>
+      <if test="timePrice != null">
+        time_price,
+      </if>
+      <if test="timeInterval != null">
+        time_interval,
+      </if>
+      <if test="waterPrice != null">
+        water_price,
+      </if>
+      <if test="waterInterval != null">
+        water_interval,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="code != null">
+        #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="rangeCode != null">
+        #{rangeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="timePrice != null">
+        #{timePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="timeInterval != null">
+        #{timeInterval,jdbcType=DOUBLE},
+      </if>
+      <if test="waterPrice != null">
+        #{waterPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="waterInterval != null">
+        #{waterInterval,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.yuan.boot.app.db.module.mybatis.base.module.pojo.PriceInfo">
+    <!--@mbg.generated-->
+    update price_info
+    <set>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="code != null">
+        code = #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        `type` = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="rangeCode != null">
+        range_code = #{rangeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="timePrice != null">
+        time_price = #{timePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="timeInterval != null">
+        time_interval = #{timeInterval,jdbcType=DOUBLE},
+      </if>
+      <if test="waterPrice != null">
+        water_price = #{waterPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="waterInterval != null">
+        water_interval = #{waterInterval,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.yuan.boot.app.db.module.mybatis.base.module.pojo.PriceInfo">
+    <!--@mbg.generated-->
+    update price_info
+    set create_user = #{createUser,jdbcType=VARCHAR},
+      update_user = #{updateUser,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      code = #{code,jdbcType=VARCHAR},
+      `type` = #{type,jdbcType=INTEGER},
+      range_code = #{rangeCode,jdbcType=VARCHAR},
+      time_price = #{timePrice,jdbcType=DECIMAL},
+      time_interval = #{timeInterval,jdbcType=DOUBLE},
+      water_price = #{waterPrice,jdbcType=DECIMAL},
+      water_interval = #{waterInterval,jdbcType=DOUBLE}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+<!--auto generated by MybatisCodeHelper on 2020-02-26-->
+  <select id="countByCodeAndRangeCode" resultType="java.lang.Long">
+        select count(1)
+        from price_info
+        where code=#{code,jdbcType=VARCHAR} and range_code=#{rangeCode,jdbcType=VARCHAR}
+    </select>
+</mapper>
