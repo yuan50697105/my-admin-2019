@@ -1,0 +1,11 @@
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-websocket'
+    compile group: 'org.minbox.framework', name: 'api-boot-starter-http-converter'
+}
+
+tasks {
+    bootJar {
+        enabled = false
+    }
+}

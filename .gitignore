@@ -5,6 +5,10 @@ build
 *.iml
 *.ipr
 *.iws
-/admin-demo-gradle/.gradle/
-node_modules
+*/node_modules
 .next
+*/.gradle
+*/.idea
+*/*.iml
+*/*.ipr
+*/*.iws

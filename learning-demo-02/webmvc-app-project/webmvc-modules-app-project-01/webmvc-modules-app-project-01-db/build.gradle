@@ -1,0 +1,9 @@
+group 'org.yuan.boot.webmvc.app.db'
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

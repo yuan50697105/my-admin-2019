@@ -1,0 +1,10 @@
+dependencies {
+    compile project(':webmvc-core')
+    compile 'org.minbox.framework:api-boot-starter-mybatis-enhance'
+}
+
+tasks {
+    bootJar {
+        enabled = false
+    }
+}
